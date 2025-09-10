@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Child Fever Chatbot - Home</title>
+  <link rel="stylesheet" href="landing.css" />
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#ff6b6b"/>
+</head>
+<body>
+  <div class="landing-container">
+    <h1>Welcome to the Child Fever Chatbot</h1>
+    <p>Quick, easy guidance for when your little one has a fever.</p>
+    <div class="illustration">
+      <img src="fever-child-line-drawing.svg" alt="Line drawing of a child with fever" />
+    </div>
+    <a href="index.html" class="start-button">Start Chat</a>
+  </div>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/service-worker.js')
+        .catch(err => console.error('SW registration failed:', err));
+    }
+  </script>
+</body>
+</html>
