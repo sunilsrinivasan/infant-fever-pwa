@@ -63,7 +63,7 @@ const steps = {
       { label: "No", next: 10 }
     ]
   },
-  10: { text: "Signs of dehydration?", options: [
+  10: { text: "Signs of dehydration like dry tongue, reduced urine?", options: [
       { label: "Yes", next: "dehydrate" },
       { label: "No", next: 11 }
     ]
@@ -125,7 +125,7 @@ const steps = {
       { label: "No", next: 21 }
     ]
   },
-  21: { text: "Other symptoms (pain, cough)?", options: [
+  21: { text: "Other symptoms (crying when voiding urine, pain on touching ear, loose motions, vomit, fits, cough)?", options: [
       { label: "Yes", next: "refer" },
       { label: "No", next: "viral_3_6m" }
     ]
@@ -135,7 +135,7 @@ const steps = {
     options: [{ label: "Restart", next: 1 }]
   },
   "vaccine_3_6m": {
-    text: "Vaccine-related fever. Give Crocin Pediatric suspension (125 mg/5 ml): 40 mg (1.6 ml) every 6 hours for up to 2 days. Observe.",
+    text: "Vaccine-related fever.  Give P 100 drops (paracetamol 100mg/ml): 50 mg (10 drops) every 6 hours for up to 2 days. Observe",
     options: [{ label: "Restart", next: 1 }]
   },
 
@@ -165,7 +165,7 @@ const steps = {
     options: [{ label: "Restart", next: 1 }]
   },
   "vaccine_6_12m": {
-    text: "Vaccine-related fever. Give Crocin Pediatric suspension (125 mg/5 ml): 50 mg (2 ml) every 6 hours for up to 2 days. Observe.",
+    text: "Vaccine-related fever. Give P 100 drops (100mg/ml): 50 mg (10 drops) every 6 hours for up to 2 days. Observe..",
     options: [{ label: "Restart", next: 1 }]
   },
 
