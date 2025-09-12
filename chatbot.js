@@ -155,7 +155,7 @@ const steps = {
       { label: "No", next: 25 }
     ]
   },
-  25: { text: "Other symptoms (pain, cough)?", options: [
+  25: { text: "Other symptoms (crying when voiding urine, pain on touching ear, loose motions, vomit, fits, cough)?", options: [
       { label: "Yes", next: "refer" },
       { label: "No", next: "viral_6_12m" }
     ]
