@@ -89,7 +89,7 @@ const steps = {
 
   // Detailed dosing for <6 months
   "viral_lt6m": {
-    text: "Likely viral. Give Crocin Pediatric suspension (125 mg/5 ml): 40 mg (1.6 ml) every 6 hours for up to 2 days. Observe.",
+    text: "Likely viral. Give P 100 drops (100mg/ml): 40 mg (8 drops) every 6 hours for up to 2 days. Observe.",
     options: [{ label: "Restart", next: 1 }]
   },
 
@@ -131,7 +131,7 @@ const steps = {
     ]
   },
   "viral_3_6m": {
-    text: "Likely viral. Give P 100 drops (paracetamol 100mg/ml): 40 mg (8 drops) every 6 hours for up to 2 days. Observe.",
+    text: "Likely viral. Give P 100 drops (paracetamol 100mg/ml): 50 mg (10 drops) every 6 hours for up to 2 days. Observe.",
     options: [{ label: "Restart", next: 1 }]
   },
   "vaccine_3_6m": {
