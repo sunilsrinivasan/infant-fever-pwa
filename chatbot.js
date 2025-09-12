@@ -83,21 +83,15 @@ const steps = {
       { label: "No", next: "no_urine" }
     ]
   },
-  "no_urine": { text: "Consult doctor immediately.", options: [
-      { label: "Restart", next: 1 }
-    ]
-  },
+  "no_urine": { … },
 
-  // Corrected dosing for <6 months
- // Corrected dosing for <6 months (3–6 months)
 "viral_lt6m": {
-  text: "Likely viral. 3–6 months: P 100 drops (paracetamol 100 mg/ml) – 8 drops (40 mg) every 6 hours if fever.",
+  text: "Likely viral. 3–6 months: P 100 drops (100 mg/ml) – 8 drops (40 mg) every 6 hours if fever.",
   options: [{ label: "Restart", next: 1 }]
 },
 
-// Corrected dosing for 6–12 months
 "viral_6_12m": {
-  text: "Likely viral. 6–12 months: P 100 drops (paracetamol 100 mg/ml) – 10 drops (50 mg) every 6 hours if fever.",
+  text: "Likely viral. 6–12 months: P 100 drops (100 mg/ml) – 10 drops (50 mg) every 6 hours if fever.",
   options: [{ label: "Restart", next: 1 }]
 },
 
