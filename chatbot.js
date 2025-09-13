@@ -83,8 +83,10 @@ const steps = {
       { label: "No", next: "no_urine" }
     ]
   },
-  "no_urine": { … },
-
+  "no_urine": {
+    text: "Consult doctor immediately.",
+    options: [{ label: "Restart", next: 1 }]
+  },
 "viral_lt6m": {
   text: "Likely viral. 3–6 months: P 100 drops (100 mg/ml) – 8 drops (40 mg) every 6 hours if fever.",
   options: [{ label: "Restart", next: 1 }]
