@@ -127,15 +127,15 @@ const steps = {
   },
   17: { text: "Travel outside town?", options: [
       { label: "Yes", next: "viral_3_6m" },
-      { label: "No", next: 20 }
+      { label: "No", next: 21 }
     ]
   },
   20: { text: "Breathing difficulty?", options: [
       { label: "Yes", next: "doctor" },
-      { label: "No", next: 21 }
+      { label: "No", next: 9 }
     ]
   },
-  21: { text: "Other symptoms (pain, cough)?", options: [
+  21: { text: "Other symptoms (incessant cry, cough, vomit, loose stools, fits, rash)?", options: [
       { label: "Yes", next: "refer" },
       { label: "No", next: "viral_3_6m" }
     ]
