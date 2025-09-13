@@ -24,7 +24,7 @@ const steps = {
     ]
   },
   4: { text: "Is the temperature above 100°F?", options: [
-      { label: "Yes", next: 7 },
+      { label: "Yes", next: 13 },
       { label: "No", next: "4.1" }
     ]
   },
@@ -33,7 +33,7 @@ const steps = {
     ]
   },
   6: { text: "Is your child hot to touch?", options: [
-      { label: "Yes", next: 7 },
+      { label: "Yes", next: 13 },
       { label: "No", next: "6.1" }
     ]
   },
