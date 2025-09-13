@@ -166,7 +166,7 @@ const steps = {
     ]
   },
   25: { text: "Other symptoms (pain, cough)?", options: [
-      { label: "Yes", next:"viral_6_12m", "refer" },
+      { label: "Yes", next: "refer" },
       { label: "No", next: "viral_6_12m" }
     ]
   },
