@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Infant Fever Checker</title>
+  <!-- Tailwind CDN (for prototyping) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white flex flex-col min-h-screen">
+
+  <!-- Navigation -->
+  <nav class="container mx-auto flex items-center justify-between py-6">
+    <h1 class="text-2xl font-bold">Infant Fever Checker</h1>
+    <div class="space-x-4">
+      <a href="#about" class="btn-secondary">About</a>
+      <a href="#how-it-works" class="btn-secondary">How it works</a>
+      <a href="#chat" class="btn-primary">Start the Chatbot</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="flex-1 flex items-center">
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <div>
+        <h2 class="text-4xl md:text-5xl font-extrabold mb-4">Worried about your infant's fever?</h2>
+        <p class="text-lg md:text-xl mb-6">
+          Get pediatric guidance in minutes. This quick triage chatbot helps parents decide when to use home care and when to seek medical attention.
+        </p>
+        <div class="space-x-4">
+          <a href="#chat" class="btn-primary">Try the Fever Chatbot</a>
+          <a href="#about" class="btn-secondary">Learn more</a>
+        </div>
+      </div>
+      <div class="hidden md:block">
+        <img src="assets/fever-illustration.svg" alt="Fever illustration" class="mx-auto"/>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="container mx-auto py-16">
+    <h3 class="text-3xl font-bold mb-4">About</h3>
+    <p class="text-gray-300">
+      Built and validated by pediatric specialists with feedback from real parents, our Infant Fever Checker offers evidence-based recommendations tailored by age and symptoms. It covers infants from birth to adolescence, guiding you through step-by-step questions to ensure safe decision-making.
+    </p>
+  </section>
+
+  <!-- How It Works Section -->
+  <section id="how-it-works" class="bg-gray-800 py-16">
+    <div class="container mx-auto">
+      <h3 class="text-3xl font-bold mb-4">How it works</h3>
+      <ul class="list-disc list-inside text-gray-300 space-y-2">
+        <li>You answer simple questions about duration, symptoms, and age.</li>
+        <li>The chatbot provides clear next steps, including home care tips or urgent medical advice.</li>
+        <li>All guidance is based on current pediatric guidelines.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Chat Section -->
+  <section id="chat" class="container mx-auto py-16">
+    <h2 class="text-3xl font-bold mb-4">Chat with our Fever Bot</h2>
+    <div id="chat-container" class="bg-gray-800 p-6 rounded-lg">
+      <!-- chatbot.js will render the chat here -->
+    </div>
+  </section>
+
+  <!-- Load chatbot logic -->
+  <script src="chatbot.js"></script>
+</body>
+</html>
