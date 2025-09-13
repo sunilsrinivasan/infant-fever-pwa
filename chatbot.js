@@ -60,7 +60,7 @@ const steps = {
     ]
   },
   9: { text: "Is child taking fluids?", options: [
-      { label: "Yes", next: "viral_lt6m" },
+      { label: "Yes", next: 11 },
       { label: "No", next: 10 }
     ]
   },
@@ -74,7 +74,7 @@ const steps = {
     ]
   },
   11: { text: "Show interest in surroundings?", options: [
-      { label: "Yes", next: "viral_lt6m" },
+      { label: "Yes", next: 15 },
       { label: "No", next: 12 }
     ]
   },
@@ -106,7 +106,7 @@ const steps = {
   // Age 3–6 months
   13: { text: "Select age group:", options: [
       { label: "<3 months", next: 14 },
-      { label: "3–6 months", next: 15 },
+      { label: "3–6 months", next: 20 },
       { label: "6–12 months", next: 22 },
       { label: "1–3 years", next: 26 },
       { label: "3–6 years", next: 31 },
@@ -157,7 +157,7 @@ const steps = {
   },
   23: { text: "Vaccination past week?", options: [
       { label: "Yes", next: "vaccine_6_12m" },
-      { label: "No", next: 24 }
+      { label: "No", next: 25 }
     ]
   },
   24: { text: "Breathing difficulty?", options: [
@@ -166,7 +166,7 @@ const steps = {
     ]
   },
   25: { text: "Other symptoms (pain, cough)?", options: [
-      { label: "Yes", next: "refer" },
+      { label: "Yes", next:"viral_6_12m", "refer" },
       { label: "No", next: "viral_6_12m" }
     ]
   },
