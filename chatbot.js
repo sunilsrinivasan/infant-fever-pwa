@@ -51,7 +51,7 @@ const steps = {
     ]
   },
   8: { text: "Is your child active?", options: [
-      { label: "Yes", next: 9 },
+      { label: "Yes", next: 13 },
       { label: "No", next: "8.1" }
     ]
   },
@@ -60,11 +60,11 @@ const steps = {
     ]
   },
   9: { text: "Is child taking fluids?", options: [
-      { label: "Yes", next: 11 },
+      { label: "Yes", next: 13 },
       { label: "No", next: 10 }
     ]
   },
-  10: { text: "Signs of dehydration?", options: [
+  10: { text: "Signs of dehydration like dry tongue?", options: [
       { label: "Yes", next: "dehydrate" },
       { label: "No", next: 11 }
     ]
@@ -74,14 +74,14 @@ const steps = {
     ]
   },
   11: { text: "Show interest in surroundings?", options: [
-      { label: "Yes", next: 15 },
+      { label: "Yes", next: 13 },
       { label: "No", next: 12 }
     ]
   },
   12: {
     text: "Voided urine in past 6h?",
     options: [
-      { label: "Yes", next: "viral_lt6m" },
+      { label: "Yes", next: 13 },
       { label: "No", next: "no_urine" }
     ]
   },
@@ -132,7 +132,7 @@ const steps = {
   },
   20: { text: "Breathing difficulty?", options: [
       { label: "Yes", next: "doctor" },
-      { label: "No", next: 9 }
+      { label: "No", next: 21 }
     ]
   },
   21: { text: "Other symptoms (incessant cry, cough, vomit, loose stools, fits, rash)?", options: [
