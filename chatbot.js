@@ -78,7 +78,9 @@ const steps = {
       { label: "No", next: 12 }
     ]
   },
-  12: { text: "Voided urine in past 6h?", options: [
+  12: {
+    text: "Voided urine in past 6h?",
+    options: [
       { label: "Yes", next: "viral_lt6m" },
       { label: "No", next: "no_urine" }
     ]
@@ -87,15 +89,18 @@ const steps = {
     text: "Consult doctor immediately.",
     options: [{ label: "Restart", next: 1 }]
   },
-"viral_lt6m": {
-  text: "Likely viral. 3–6 months: P 100 drops (100 mg/ml) – 8 drops (40 mg) every 6 hours if fever.",
-  options: [{ label: "Restart", next: 1 }]
-},
 
-"viral_6_12m": {
-  text: "Likely viral. 6–12 months: P 100 drops (100 mg/ml) – 10 drops (50 mg) every 6 hours if fever.",
-  options: [{ label: "Restart", next: 1 }]
-},
+  // 3–6 months dosing
+  "viral_lt6m": {
+    text: "Likely viral. 3–6 months: P 100 drops (100 mg/ml) – 8 drops (40 mg) every 6 hours if fever.",
+    options: [{ label: "Restart", next: 1 }]
+  },
+
+  // 6–12 months dosing
+  "viral_6_12m": {
+    text: "Likely viral. 6–12 months: P 100 drops (100 mg/ml) – 10 drops (50 mg) every 6 hours if fever.",
+    options: [{ label: "Restart", next: 1 }]
+  },
 
 
   // Age 3–6 months
