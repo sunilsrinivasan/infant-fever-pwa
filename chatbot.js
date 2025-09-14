@@ -81,7 +81,7 @@ const steps = {
   12: {
     text: "Voided urine in past 6h?",
     options: [
-      { label: "Yes", next: 13 },
+      { label: "Yes", next: 15 },
       { label: "No", next: "no_urine" }
     ]
   },
