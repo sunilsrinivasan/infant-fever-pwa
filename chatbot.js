@@ -108,7 +108,7 @@ const steps = {
       { label: "<3 months", next: 14 },
       { label: "3–6 months", next: 20 },
       { label: "6–12 months", next: 24 },
-      { label: "1–3 years", next: 26 },
+      { label: "1–3 years", next: 29 },
       { label: "3–6 years", next: 31 },
       { label: "6–10 years", next: 37 },
       { label: ">10 years", next: 41 }
@@ -192,7 +192,7 @@ const steps = {
   },
   28: { text: "Vaccination past week?", options: [
       { label: "Yes", next: "vaccine_1_3y" },
-      { label: "No", next: 29 }
+      { label: "No", next: "viral_1_3y" }
     ]
   },
   29: { text: "Breathing difficulty?", options: [
@@ -200,9 +200,9 @@ const steps = {
       { label: "No", next: 30 }
     ]
   },
-  30: { text: "Other symptoms (pain, cough)?", options: [
+  30: { text: "incessant cry,very tired, vomit, loose stools, fits, rash, dry tongue, reduced urine?", options: [
       { label: "Yes", next: "refer" },
-      { label: "No", next: "viral_1_3y" }
+      { label: "No", next: 26 }
     ]
   },
   "viral_1_3y": {
