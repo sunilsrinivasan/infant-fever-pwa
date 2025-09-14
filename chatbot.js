@@ -110,7 +110,7 @@ const steps = {
       { label: "6–12 months", next: 24 },
       { label: "1–3 years", next: 29 },
       { label: "3–6 years", next: 34 },
-      { label: "6–10 years", next: 37 },
+      { label: "6–10 years", next: 39 },
       { label: ">10 years", next: 41 }
     ]
   },
@@ -251,7 +251,7 @@ const steps = {
   },
   38: { text: "Ice cream or cold drinks past 3 days?", options: [
       { label: "Yes", next: "viral_6_10y" },
-      { label: "No", next: 39 }
+      { label: "No", next: "viral_6_10y" }
     ]
   },
   39: { text: "Breathing difficulty?", options: [
@@ -259,9 +259,9 @@ const steps = {
       { label: "No", next: 40 }
     ]
   },
-  40: { text: "Other symptoms (pain, cough)?", options: [
+  40: { text: "Other symptoms (very tired, vomit, loose stools, fits, rash, dry tongue, reduced urine)?", options: [
       { label: "Yes", next: "refer" },
-      { label: "No", next: "viral_6_10y" }
+      { label: "No", next: 37 }
     ]
   },
   "viral_6_10y": {
