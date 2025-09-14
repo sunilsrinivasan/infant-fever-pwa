@@ -60,7 +60,7 @@ const steps = {
     ]
   },
   9: { text: "Is child taking fluids?", options: [
-      { label: "Yes", next: 13 },
+      { label: "Yes", next: 15 },
       { label: "No", next: 10 }
     ]
   },
@@ -127,7 +127,7 @@ const steps = {
   },
   17: { text: "Travel outside town?", options: [
       { label: "Yes", next: "viral_3_6m" },
-      { label: "No", next: 21 }
+      { label: "No", next: "viral_3_6m" }
     ]
   },
   20: { text: "Breathing difficulty?", options: [
@@ -136,8 +136,8 @@ const steps = {
     ]
   },
   21: { text: "Other symptoms (incessant cry, cough, vomit, loose stools, fits, rash)?", options: [
-      { label: "Yes", next: "refer" },
-      { label: "No", next: "viral_3_6m" }
+      { label: "Yes", next: "doctor" },
+      { label: "No", next: 9 }
     ]
   },
   "viral_3_6m": {
