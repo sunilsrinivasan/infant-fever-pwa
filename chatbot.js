@@ -107,7 +107,7 @@ const steps = {
   13: { text: "Select age group:", options: [
       { label: "<3 months", next: 14 },
       { label: "3–6 months", next: 20 },
-      { label: "6–12 months", next: 22 },
+      { label: "6–12 months", next: 24 },
       { label: "1–3 years", next: 26 },
       { label: "3–6 years", next: 31 },
       { label: "6–10 years", next: 37 },
@@ -157,7 +157,7 @@ const steps = {
   },
   23: { text: "Vaccination past week?", options: [
       { label: "Yes", next: "vaccine_6_12m" },
-      { label: "No", next: 25 }
+      { label: "No", next: "viral_6_12m" }
     ]
   },
   24: { text: "Breathing difficulty?", options: [
@@ -165,9 +165,9 @@ const steps = {
       { label: "No", next: 25 }
     ]
   },
-  25: { text: "Other symptoms (incessant cry, cough, vomit, loose stools, fits, rash)?", options: [
-      { label: "Yes", next: "refer" },
-      { label: "No", next: "viral_6_12m" }
+  25: { text: "Other symptoms (incessant cry,very tired, vomit, loose stools, fits, rash, dry tongue, reduced urine)?", options: [
+      { label: "Yes", next: "doctor" },
+      { label: "No", next: 22 }
     ]
   },
   "viral_6_12m": {
