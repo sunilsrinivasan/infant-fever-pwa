@@ -66,7 +66,7 @@ const steps = {
   },
   10: { text: "Signs of dehydration like dry tongue?", options: [
       { label: "Yes", next: "dehydrate" },
-      { label: "No", next: 11 }
+      { label: "No", next: 12 }
     ]
   },
   "dehydrate": { text: "Consult doctor immediately.", options: [
