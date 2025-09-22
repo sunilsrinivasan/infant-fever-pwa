@@ -92,13 +92,13 @@ const steps = {
 
   // 3–6 months dosing
   "viral_lt6m": {
-    text: "Likely viral. 3–6 months: P 100 drops (100 mg/ml) – 8 drops (40 mg) every 6 hours if fever.",
+    text: "Likely viral. 3–6 months: P 100 drops (paracetamol 100 mg/ml) – 8 drops (40 mg) every 6 hours if fever.",
     options: [{ label: "Restart", next: 1 }]
   },
 
   // 6–12 months dosing
   "viral_6_12m": {
-    text: "Likely viral. 6–12 months: P 100 drops (100 mg/ml) – 10 drops (50 mg) every 6 hours if fever.",
+    text: "Likely viral. 6–12 months: P 100 drops (paracetamol 100 mg/ml) – 10 drops (50 mg) every 6 hours if fever.",
     options: [{ label: "Restart", next: 1 }]
   },
 
@@ -206,10 +206,10 @@ const steps = {
     ]
   },
   "viral_1_3y": {
-    text: "Likely viral. 1–3 years: P 125 syrup (125 mg/5 ml) – 5 ml every 6 hours if fever.",
+    text: "Likely viral. 1–3 years: P 125 syrup (paracetamol 125 mg/5 ml) – 5 ml every 6 hours if fever.",
     options: [{ label: "Restart", next: 1 }]
   },
-  "vaccine_1_3y": { text: "Vaccine-related fever. 1–3 years: P 125 syrup (125 mg/5 ml) – 5 ml every 6 hours if fever.", options: [{ label: "Restart", next: 1 }] },
+  "vaccine_1_3y": { text: "Vaccine-related fever. 1–3 years: P 125 syrup (paracetamol 125 mg/5 ml) – 5 ml every 6 hours if fever.", options: [{ label: "Restart", next: 1 }] },
 
   // Age 3–6 years
   31: { text: "Any other family member fever?", options: [
@@ -238,10 +238,10 @@ const steps = {
     ]
   },
   "viral_3_6y": {
-    text: "Likely viral. 3–6 years: P 125 syrup (125 mg/5 ml) – 7.5 ml every 6 hours if fever.",
+    text: "Likely viral. 3–6 years: P 125 syrup (paracetamol 125 mg/5 ml) – 7.5 ml every 6 hours if fever.",
     options: [{ label: "Restart", next: 1 }]
   },
-  "vaccine_3_6y": { text: "Vaccine-related fever. 3–6 years: P 125 syrup (125 mg/5 ml) – 7.5 ml every 6 hours if fever.", options: [{ label: "Restart", next: 1 }] },
+  "vaccine_3_6y": { text: "Vaccine-related fever. 3–6 years: P 125 syrup (paracetamol 125 mg/5 ml) – 7.5 ml every 6 hours if fever.", options: [{ label: "Restart", next: 1 }] },
 
   // Age 6–10 years
   37: { text: "Any other family member fever?", options: [
@@ -265,10 +265,10 @@ const steps = {
     ]
   },
   "viral_6_10y": {
-    text: "Likely viral. 6–10 years: P 250 syrup (250 mg/5 ml) – 5 ml every 6 hours if fever.",
+    text: "Likely viral. 6–10 years: P 250 syrup (paracetamol 250 mg/5 ml) – 5 ml every 6 hours if fever.",
     options: [{ label: "Restart", next: 1 }]
   },
-  "vaccine_6_10y": { text: "Vaccine-related fever. 6–10 years: P 250 syrup (250 mg/5 ml) – 5 ml every 6 hours if fever.", options: [{ label: "Restart", next: 1 }] },
+  "vaccine_6_10y": { text: "Vaccine-related fever. 6–10 years: P 250 syrup (paracetamol 250 mg/5 ml) – 5 ml every 6 hours if fever.", options: [{ label: "Restart", next: 1 }] },
 
   // Age >10 years
   41: { text: "Any other family member fever?", options: [
@@ -292,7 +292,7 @@ const steps = {
     ]
   },
   "viral_gt10y": {
-    text: "Likely viral. Above 10 years: P 250 syrup (250 mg/5 ml) – 7.5 ml every 6 hours if fever.",
+    text: "Likely viral. Above 10 years: P 250 syrup (paracetamol 250 mg/5 ml) – 7.5 ml every 6 hours if fever.",
     options: [{ label: "Restart", next: 1 }]
   },
   45: { text: "Consult doctor immediately.", options: [{ label: "Restart", next: 1 }] },
